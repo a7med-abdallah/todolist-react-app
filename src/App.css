@@ -30,13 +30,18 @@
    justify-content: space-around;
    border-bottom: 1px solid #f9f9f9
  }
+ 
  .listItems div  span:not(:first-child){
   border-left: 1px solid #f9f9f9;
 }
  .listItems div:last-child {
    border-bottom: none;
  }
-
+ .listItems p{
+   margin: 0;
+   padding: 20px;
+   color: red;
+ }
  .table-head {
    background-color: #fdfdfd;
    display: flex;
