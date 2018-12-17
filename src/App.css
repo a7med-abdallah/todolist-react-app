@@ -1,32 +1,102 @@
-.App {
-  text-align: center;
-}
+ h2 {
+   margin-bottom: 50px;
+ }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
+ span {
+   padding: 5px;
+   flex: 1;
+   text-transform: capitalize;
+ }
+ span:not(:first-child){
+   border-left: 1px solid #fdfdfd;
+ }
+ .delete {
+   cursor: pointer;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ .app-container {
+   max-width: 500px;
+   margin: 100px auto;
+   text-align: center;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .listItems {
+   border: 1px solid #f9f9f9;
+   border-bottom: none;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ .listItems div {
+   display: flex;
+   justify-content: space-around;
+   border-bottom: 1px solid #f9f9f9
+ }
+ .listItems div  span:not(:first-child){
+  border-left: 1px solid #f9f9f9;
 }
+ .listItems div:last-child {
+   border-bottom: none;
+ }
+
+ .table-head {
+   background-color: #fdfdfd;
+   display: flex;
+   justify-content: space-around;
+ }
+
+ form {
+   display: flex;
+ }
+
+ form .form-control,
+ form .btn-primary {
+   flex: 1;
+   border-radius: 0;
+ }
+
+ .btn {
+   min-width: 150px;
+   text-transform: capitalize;
+ }
+
+ .form-control {
+   border: 1px solid #f9f9f9;
+   text-align: left;
+   transition: .3s ease;
+ }
+
+ .form-control:focus {
+   box-shadow: none;
+   border: 1px solid #f9f9f9;
+ }
+
+ .form-control::-webkit-input-placeholder {
+   text-align: center
+ }
+
+ .form-control::-moz-placeholder {
+   text-align: center
+ }
+
+ .form-control:-ms-input-placeholder {
+   text-align: center
+ }
+
+ .form-control:-moz-placeholder {
+   text-align: center;
+ }
+
+ .form-control:focus::-webkit-input-placeholder {
+   opacity: 0;
+ }
+
+ .form-control:focus::-moz-placeholder {
+   text-align: center
+ }
+
+ .form-control:focus:-ms-input-placeholder {
+   text-align: center
+ }
+
+ .form-control:focus:-moz-placeholder {
+   text-align: center
+ }
